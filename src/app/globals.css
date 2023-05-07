@@ -1,6 +1,6 @@
 :root {
   --max-page-size: 960px;
-  --header-height: 217px;
+  --header-height: 162px;
   --footer-height: 80px;
   --main-max-height: calc(100vh - var(--header-height) - var(--footer-height));
 }
@@ -68,7 +68,7 @@ header h1,
 header h2 {
   color: #fff;
   width: 100%;
-  margin: 20px 0;
+  margin: 15px 0;
   display: flex;
   align-items: center;
 }
@@ -80,12 +80,12 @@ header .presentation a {
 header h2 {
   transform: scaleX(1.5);
   margin-left: 480px;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 header h1 {
-  margin-top: 50px;
-  font-size: 20px;
+  margin-top: 35px;
+  font-size: 18px;
   transform: scaleY(1.5);
 }
 
@@ -170,9 +170,13 @@ footer .content {
 
 /* Mobile and tablet */
 @media (max-width: 960px) {
+  :root {
+    --main-max-height: calc(100vh - var(--header-height) - var(--footer-height) + 22px);
+  }
+
   header h1 {
-    font-size: 18px;
-    margin-left: 10px;
+    font-size: 14px;
+    margin: 30px 0 5px 15px;
   }
 
   main .content:not(.flat) {
@@ -180,10 +184,10 @@ footer .content {
   }
 
   header h2 {
-    font-size: 14px;
+    font-size: 12px;
     width: 320px;
     align-self: flex-start;
-    margin-left: 87px;
+    margin: 10px 0 10px 87px;
   }
 
   header nav {
@@ -211,7 +215,7 @@ footer .content {
   }
 
   footer {
-    padding: 5px;
+    padding: 0;
   }
 
   footer ul li a {
@@ -228,5 +232,12 @@ footer .content {
 @media (max-width: 474px) {
   footer .author {
     margin: 10px 0;
+  }
+}
+
+/* Only mobile & tablet portrait */
+@media (max-width: 960px) and (orientation: landscape) {
+  :root {
+    --main-max-height: calc(100vh - var(--header-height) - var(--footer-height) + 50px);
   }
 }
