@@ -175,8 +175,15 @@ footer .content {
     margin-left: 10px;
   }
 
+  main .content:not(.flat) {
+    padding: 0 10px;
+  }
+
   header h2 {
     font-size: 14px;
+    width: 320px;
+    align-self: flex-start;
+    margin-left: 87px;
   }
 
   header nav {
