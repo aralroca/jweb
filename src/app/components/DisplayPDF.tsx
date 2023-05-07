@@ -15,7 +15,7 @@ export default function DisplayPDF({ pdfLink, page = 1, section = 20 }: Props) {
       <object data={src} type="application/pdf" style={{
         width: '100%',
         height: 'var(--main-max-height)',
-        marginTop: '-50px'
+        marginTop: '-30px'
       }}>
         <p>No és possible visualitzar el PDF.</p>
       </object>
