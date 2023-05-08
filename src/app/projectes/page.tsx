@@ -2,11 +2,13 @@ import Image from "next/image";
 import { projectCategories, projects } from "../constants/default-data";
 import Link from 'next/link'
 import fs from 'fs/promises'
+import { join } from "path";
 import ImageGallery from "../components/ImageGallery";
 
 async function getProjectImages(projectId: number) {
   const prefix = '/images/projectesiobres/'
-  const images = await fs.readdir(`public${prefix}${projectId}`).catch(() => []);
+  const path = join(process.cwd(), `public${prefix}${projectId}`)
+  const images = await fs.readdir(path).catch(() => []);
   return images.map(image => `${prefix}${projectId}/${image}`);
 }
 
