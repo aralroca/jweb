@@ -6,7 +6,7 @@ export const projectCategories = [
   { id: 5, name: 'PROJECTES D\'EDIFICACIÓ', order: 5 },
 ];
 
-export const projectes = [
+export const projects = [
   { id: 3, name: '1986. Pla Especial del Segon Cinturó', category: 1 },
   { id: 2, name: '1986. Pla Especial del Marge Esquerre del Riu Besòs', category: 1 },
   { id: 4, name: '1992. Pla Especial de l\'Avinguda de l\'Onze de Setembre', category: 1 },

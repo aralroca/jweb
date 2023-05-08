@@ -41,6 +41,26 @@ nav {
   background: white;
 }
 
+dl {
+  padding: 10px;
+}
+
+dt {
+  font-size: 16px;
+}
+
+dd a {
+  font-size: 10px;
+}
+
+dd {
+  margin-left: 40px;
+}
+
+dd.active {
+  font-weight: bold;
+}
+
 nav a {
   font-size: 12px;
 }
@@ -130,7 +150,7 @@ a.active {
 
 .sticky {
   position: sticky;
-  top: 48px;
+  top: 0px;
 }
 
 main {
@@ -168,10 +188,37 @@ footer .content {
   margin: auto;
 }
 
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.projects>* {
+  flex: 1;
+  min-width: 320px;
+  width: 50%;
+}
+
+.projects aside {
+  margin-top: 20px;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
 /* Mobile and tablet */
 @media (max-width: 960px) {
   :root {
     --main-max-height: calc(100vh - var(--header-height) - var(--footer-height) + 22px);
+  }
+
+  .projects aside {
+    order: -1;
+    padding-bottom: 10px;
+    box-shadow: 0 1px 1px -1px gray;
   }
 
   header h1 {
