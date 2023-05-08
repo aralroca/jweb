@@ -49,7 +49,7 @@ export default function Privacity() {
         7. Modificació de la política de privacitat
       </p>
       <p>
-        L&apos;arquitecte responsable d&apos;aquesta pàgina web es reserva el dret de modificar la present política de privacitat per adaptar-la a les novetats legislatives o jurisprudencials, així com a les pràctiques de la indústria. En aquest cas, es publicarà la nova política de privacitat a través d'aquesta pàgina web.
+        L&apos;arquitecte responsable d&apos;aquesta pàgina web es reserva el dret de modificar la present política de privacitat per adaptar-la a les novetats legislatives o jurisprudencials, així com a les pràctiques de la indústria. En aquest cas, es publicarà la nova política de privacitat a través d&apos;aquesta pàgina web.
       </p>
     </div>
   )
