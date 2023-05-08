@@ -44,7 +44,7 @@ export default async function Projects({ searchParams: { id } }: { searchParams:
               position: 'sticky',
               top: 37,
             }} />
-            <Link style={{ position: 'sticky', top: 290, width: '100%', textAlign: 'right', fontSize: 12 }} href="/download?">
+            <Link style={{ position: 'sticky', top: 290, width: '100%', textAlign: 'right', fontSize: 12 }} href={`/descarregar?pdf=/pdfs/projectesiobres/${selectedProject.id}.PDF&name=${selectedProject.name}.pdf`}>
               Descarregar PDF
             </Link>
           </>

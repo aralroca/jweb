@@ -1,12 +1,14 @@
+import Link from 'next/link'
 import React from 'react'
 
 type Props = {
   pdfLink: string,
   page?: number,
   section?: number
+  name?: string
 }
 
-export default function DisplayPDF({ pdfLink, page = 1, section = 20 }: Props) {
+export default function DisplayPDF({ pdfLink, page = 1, section = 20, name }: Props) {
   const controls = `#toolbar=0&navpanes=0&scrollbar=${page}&page=1&view=fitH,${section}`
   const src = pdfLink + controls
 
@@ -20,7 +22,7 @@ export default function DisplayPDF({ pdfLink, page = 1, section = 20 }: Props) {
         <p>No és possible visualitzar el PDF.</p>
       </object>
       <div style={{ textAlign: 'right' }}>
-        <a href={pdfLink} download>DESCARREGAR PDF</a>
+        <Link style={{ fontSize: 12 }} href={`/descarregar?pdf=${pdfLink}&name=${name}`} download>DESCARREGAR PDF</Link>
       </div>
     </>
   )
