@@ -79,8 +79,8 @@ export default function RootLayout({
               </li>
             </ul>
             <div className="author">
-              <a href="mailto:contact@aralroca.com">
-                © ARAL ROCA {new Date().getFullYear()}
+              <a href="mailto:arr@arquired.es">
+                © JAUME ARTIGUES {new Date().getFullYear()}
               </a>
             </div>
           </div>
